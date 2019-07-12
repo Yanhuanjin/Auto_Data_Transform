@@ -9,11 +9,11 @@ OUT: *target_out*.csv
 
 Here I download a sheet online, and it looks like this in *pandas*:
 
-<img src= "img/input.png"  height="380">
+<img src= "img/input.png"  height="300">
 
 And after performing auto_data_transform, it will be like this:
 
-<img src= "img/output.png" height="300">
+<img src= "img/output.png" height="230">
 
 Note: The date data form has been transfered into day_of_year
 
