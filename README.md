@@ -5,7 +5,7 @@ Usage: python python_data_interface.py *target*.csv
 
 OUT: *target_out*.csv
 
-## Example
+## Example 1
 
 Here I download a sheet online, and it looks like this:
 
@@ -15,4 +15,4 @@ And after performing auto_data_transform, it will be like this:
 
 <img src= "img/output.png" height="300">
 
-Also, emmm, here is an addtional column called Unnamed: 0, it's the auto order number.
+Note: The date data form has been transfered into day_of_year
