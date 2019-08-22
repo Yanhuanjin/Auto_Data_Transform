@@ -1,5 +1,17 @@
 # Auto_Data_Transform
-A script to transform .csv file (containing strings) to fully digital .csv
+
+A script to transform .csv file (containing strings) to fully digital .csv file.
+
+Like this:
+
+> Input: Good, Bad, Good
+
+> Output: 1, 0, 1 
+ 
+> Input: 2019-01-01, 2019-01-02, 2019-01-03
+
+> Output: 1, 2, 3
+
 
 Usage: python auto_data_transform.py *target*.csv
 
@@ -29,4 +41,4 @@ And the output file will be like this,
 
 All the categories/strings will be labeled to number, which is helpful to do machine learning directly. 
 
-And use pd.read_csv("input.csv", index_col=0) to drop the "Unnamed:0 col".
+And use pd.read_csv("input.csv", index_col=0) to drop the "**Unnamed:0 col**".
