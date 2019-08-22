@@ -25,8 +25,9 @@ def specify_types(df, column_label):
     like: Time Categories Strings Num
     :return: types in (Time Categories Strings Num)
     """
-    data_1 = str(df[column_label][1])
-    if data_1.isdigit():
+    data_1 = df[column_label][1]
+    if isinstance(data_1, float) or type(data_1) == np.int64:
+        print(data_1)
         return(np.array(df[column_label]))
     else:
         flag_is_date = date_check(data_1)
@@ -41,7 +42,7 @@ def date_check(data):
     :return whether a data is a date form:
     """
     pattern = re.compile(r"\d{1,4}(/|-)\d{1,2}(/|-)\d{1,2}")
-    match = pattern.match(data)
+    match = pattern.match(str(data))
     if match:
         return True
     else:
