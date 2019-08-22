@@ -26,3 +26,7 @@ An input file like this,
 And the output file will be like this,
 
 <img src="img/output_2.png" height="180">
+
+All the categories/strings will be labeled to number, which is helpful to do machine learning directly. 
+
+And use pd.read_csv("input.csv", index_col=0) to drop the "Unnamed:0 col".
