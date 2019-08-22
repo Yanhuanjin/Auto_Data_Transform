@@ -23,6 +23,6 @@ An input file like this,
 
 <img src="img/input_2.png">
 
-And the output file like this,
+And the output file will be like this,
 
-<img src="img/output_2.png" height=230>
+<img src="img/output_2.png" height="180">
