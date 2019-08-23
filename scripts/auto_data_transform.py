@@ -1,8 +1,10 @@
-import pandas as pd
 import numpy as np
-import sys
-from sklearn.preprocessing import LabelEncoder
+import pandas as pd
 import re
+import sys
+
+from sklearn.preprocessing import LabelEncoder
+
 
 """
 A project writen in Python to convert any data in .csv format to fully digital data.
